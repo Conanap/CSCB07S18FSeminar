@@ -11,10 +11,17 @@ to see the end result. Make sure they're in the same folder.
 readme (lowercased) shows an example file of what would be in a conflicting svn file.
 
 run ./conflict after chmod (UNIX only) to simulate an svn conflict. Note that it does not actually parse your input and just outputs canned responses. Correct order of input:
+
 svn update
+
 p
+
 // fix your file, then do this input
+
 svn resolve readme
+
 svn status
+
 svn commit -m "your message here"
+
 end (or anything you want really)
