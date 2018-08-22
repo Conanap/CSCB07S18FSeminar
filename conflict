@@ -1,0 +1,25 @@
+clear
+printf "$ "
+read #svn update
+printf "conflict disocvered in 'readme'. \nSelect: (p) postpone, (df) diff-full, (e) edit,\n\t(mc) mine-conflict, (tc) theirs-conflict,\n\t(s) show all options: "
+printf "$ "
+read #p
+printf "C\treadme\nUpdated to revision 420.\nSummary of conflicts:\n\tText conflicts: 1\n"
+printf "$ "
+read #fix file -> svn status
+printf "?\treadme.r419\n"
+printf "?\treadme.r420\n"
+printf "?\treadme.mine\n"
+printf "C\treadme\n"
+printf "$ "
+read #svn resolve readme
+printf "Resolved conflicted state of 'readme'\n"
+printf "$ "
+read #svn status
+printf "M\treadme\n"
+printf "$ "
+read #svn commit -m "wow"
+printf "Sending\treadme\nTransmitting file data .\nCommited revision 421.\n"
+printf "$ "
+read
+clear
