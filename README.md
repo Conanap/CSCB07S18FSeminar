@@ -18,6 +18,8 @@ p
 
 // fix your file, then do this input
 
+svn status
+
 svn resolve readme
 
 svn status
