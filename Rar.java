@@ -19,7 +19,7 @@ public class Rar
                 System.out.println(b.nameHeart());
 
                 // do you know why this doesn't work?
-                //Dad d = new Dad("Hungry");
+                //Dad d = new Rar("Hungry");
                 Dad d = new Dad();
                 System.out.println(d.tellDadJoke());
                 System.out.println(d.nameHeart());
